@@ -1,0 +1,28 @@
+info:
+  name: Update Product
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/product/:id"
+  params:
+    - name: id
+      value: 6a10a9a3-1ba5-4a3b-97a7-5a71738cc6c6
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Carne",
+        "summary": "Proteina animal modificado otra vez",
+        "price": 20.5,
+        "measureUnit": "Kilogramos"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

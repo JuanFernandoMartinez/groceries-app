@@ -1,0 +1,30 @@
+info:
+  name: Create Stock
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/stock"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Comida 2",
+        "summary": "Comida a ser consumida durante la semana",
+        "products": [
+          {
+        "produuctId": "5925b269-6604-4f56-9af3-dd7a719375e9",
+        "quantity": 0,
+        "minimumQuantity": 1,
+        "idealQuantity": 2
+      }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

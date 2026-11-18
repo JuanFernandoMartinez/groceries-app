@@ -1,0 +1,28 @@
+info:
+  name: Add Product to Stock
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/stock/:id/add-product"
+  params:
+    - name: id
+      value: ef45a015-d06d-4693-b413-6b0cb55d75c9
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "produuctId": "108cb513-4b7e-467b-bd40-f20777d52f7d",
+        "quantity": 0,
+        "minimumQuantity": 3,
+        "idealQuantity": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

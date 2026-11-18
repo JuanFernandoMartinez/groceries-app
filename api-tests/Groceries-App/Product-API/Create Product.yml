@@ -1,0 +1,24 @@
+info:
+  name: Create Product
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/product"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Carne",
+        "summary": "Proteina Animal",
+        "price": 20.5,
+        "measureUnit": "Kilogramos"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
