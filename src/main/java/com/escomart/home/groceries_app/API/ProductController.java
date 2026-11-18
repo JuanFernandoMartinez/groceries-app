@@ -3,6 +3,7 @@ package com.escomart.home.groceries_app.API;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,5 +43,10 @@ public class ProductController {
     @PutMapping("/{id}") 
     public ProductDTO updateProduct(@PathVariable UUID id, @RequestBody ProductDTO productDTO){
         return ProductMapper.fromEntity(productService.updateProduct(id, ProductMapper.fromDTO(productDTO)));
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteProduct(@PathVariable UUID id){
+        productService.deleteProduct(id);
     }
 }
