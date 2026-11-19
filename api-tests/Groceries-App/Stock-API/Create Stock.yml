@@ -10,11 +10,11 @@ http:
     type: json
     data: |-
       {
-        "name": "Comida 2",
+        "name": "Comida 3",
         "summary": "Comida a ser consumida durante la semana",
         "products": [
           {
-        "produuctId": "5925b269-6604-4f56-9af3-dd7a719375e9",
+        "produuctId": "94d122da-03a1-4fea-a062-76cd9a29a7d5",
         "quantity": 0,
         "minimumQuantity": 1,
         "idealQuantity": 2

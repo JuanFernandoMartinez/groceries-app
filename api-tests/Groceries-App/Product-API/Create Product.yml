@@ -10,10 +10,10 @@ http:
     type: json
     data: |-
       {
-        "name": "Carne",
-        "summary": "Proteina Animal",
+        "name": "Leche",
+        "summary": "Bebida Lactea",
         "price": 20.5,
-        "measureUnit": "Kilogramos"
+        "measureUnit": "Litros"
       }
   auth: inherit
 

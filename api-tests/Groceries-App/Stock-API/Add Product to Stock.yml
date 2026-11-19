@@ -8,13 +8,13 @@ http:
   url: "{{BASE_URL}}/stock/:id/add-product"
   params:
     - name: id
-      value: ef45a015-d06d-4693-b413-6b0cb55d75c9
+      value: 541040e4-1dc2-4394-bb40-b6af31167598
       type: path
   body:
     type: json
     data: |-
       {
-        "produuctId": "108cb513-4b7e-467b-bd40-f20777d52f7d",
+        "produuctId": "94d122da-03a1-4fea-a062-76cd9a29a7d5",
         "quantity": 0,
         "minimumQuantity": 3,
         "idealQuantity": 5
