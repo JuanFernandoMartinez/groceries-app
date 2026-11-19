@@ -1,6 +1,5 @@
 package com.escomart.home.groceries_app.services.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
